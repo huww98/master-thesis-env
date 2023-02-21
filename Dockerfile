@@ -8,7 +8,8 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         texlive-xetex texlive-lang-chinese texlive-science latexmk \
-        python3 python3-pip
+        python3 python3-pip \
+        make
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip3 install matplotlib
