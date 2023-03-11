@@ -14,4 +14,4 @@ RUN --mount=type=cache,target=/var/cache/apt \
         make
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip3 install matplotlib opencv-python-headless
+    pip3 install matplotlib opencv-python-headless scipy
