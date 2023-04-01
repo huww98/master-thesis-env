@@ -8,7 +8,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         texlive-xetex texlive-lang-chinese texlive-science texlive-extra-utils latexmk \
-        fontconfig \
+        fontconfig fonts-noto-cjk \
         python3 python3-pip \
         make
 
