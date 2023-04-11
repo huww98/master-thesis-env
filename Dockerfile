@@ -9,7 +9,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         texlive-xetex texlive-lang-chinese texlive-science texlive-extra-utils latexmk \
         fontconfig fonts-noto-cjk \
-        python3 python3-pip \
+        python3 python3-pip git \
         make
 
 RUN --mount=type=cache,target=/root/.cache/pip \
